@@ -4,7 +4,7 @@ import numpy as np
 from joblib import load
 
 # Load your water quality prediction model
-model = load('MyModel.joblib')
+model = load('./MyModel.joblib')
 
 st.title('Water Quality Prediction Interface :droplet:')
 
