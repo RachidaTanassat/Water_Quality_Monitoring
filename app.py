@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from tensorflow.keras import models
+from joblib import load
 
 # Load your water quality prediction model
-model = models.load_model('MyModel.h5')
+model = load('MyModel.joblib')
 
 
 st.title('Water Quality Prediction Interface :droplet:')
