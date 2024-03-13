@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from joblib import load
+from tensorflow.keras import models
 
 # Load your water quality prediction model
 model = models.load_model('MyModel.h5')
