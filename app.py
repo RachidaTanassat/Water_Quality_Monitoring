@@ -50,8 +50,8 @@ Chlorine = st.text_input("Input Chlorine", '1.0')
 def predict(): 
     # Create a DataFrame for prediction
     columns = ['pH', 'Nitrate', 'Chloride', 'Zinc', 'Turbidity', 'Fluoride', 'Copper', 'Odor', 'Sulfate', 'Conductivity', 'Chlorine'] 
-    #row = np.array([pH, Nitrate, Chloride, Zinc, Turbidity, Fluoride, Copper, Odor, Sulfate, Conductivity, Chlorine]) 
-    row = np.array([6.688009,5.356380,166.717667,0.205945,0.004755,1.232307,0.008460,2.125127,84.560102,490.677175,3.416104]) 
+    row = np.array([pH, Nitrate, Chloride, Zinc, Turbidity, Fluoride, Copper, Odor, Sulfate, Conductivity, Chlorine]) 
+    #row = np.array([6.688009,5.356380,166.717667,0.205945,0.004755,1.232307,0.008460,2.125127,84.560102,490.677175,3.416104]) 
     X = pd.DataFrame([row], columns=columns)
     
     # Make prediction
